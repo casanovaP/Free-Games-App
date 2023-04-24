@@ -31,7 +31,7 @@ class DetailsViewModel @Inject constructor(
         }
     }
 
-    private fun getGame(gameId: Int) {
+    fun getGame(gameId: Int) {
         viewModelScope.launch {
             detailsUiState = DetailsUiState.Loading
             detailsUiState = try {

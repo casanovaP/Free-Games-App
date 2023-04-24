@@ -1,4 +1,4 @@
-package com.example.freegamesapp.presentation.screens.components
+package com.example.freegamesapp.presentation.screens.common
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize

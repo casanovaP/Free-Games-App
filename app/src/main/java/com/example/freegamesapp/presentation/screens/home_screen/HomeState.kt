@@ -4,8 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import com.example.freegamesapp.domain.models.Game
-import com.example.freegamesapp.presentation.screens.components.LoadingScreen
-import com.example.freegamesapp.presentation.screens.components.ErrorScreen
+import com.example.freegamesapp.presentation.screens.common.LoadingScreen
+import com.example.freegamesapp.presentation.screens.common.ErrorScreen
 
 sealed interface HomeUiState {
     object Loading : HomeUiState

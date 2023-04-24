@@ -7,15 +7,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.example.freegamesapp.R
+import com.example.freegamesapp.domain.models.GameDetails
 import com.example.freegamesapp.presentation.screens.home_screen.HomeViewModel
+import com.example.freegamesapp.utils.Constants
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun FreeGamesDetailsScreen(
-    detailsViewModel: DetailsViewModel,
+    gameid: Int,
     modifier: Modifier = Modifier
 ) {
     Scaffold(
@@ -28,11 +31,9 @@ fun FreeGamesDetailsScreen(
                 .padding(4.dp),
             color = MaterialTheme.colorScheme.background
         ) {
-            val homeViewModel: HomeViewModel = viewModel()
+            val detailsViewModel: DetailsViewModel = viewModel()
 
-            DetailsState(
-                detailsViewModel = detailsViewModel
-            )
+            DetailsState(gameId = gameid)
         }
     }
 }

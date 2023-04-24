@@ -1,11 +1,14 @@
 package com.example.freegamesapp.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.lifecycle.SavedStateHandle
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.example.freegamesapp.presentation.screens.details_screen.DetailsViewModel
+import com.example.freegamesapp.presentation.screens.details_screen.FreeGamesDetailsScreen
 import com.example.freegamesapp.presentation.screens.home_screen.FreeGamesAppScreen
 import com.example.freegamesapp.utils.Constants.GAME_PARAM_KEY
 

@@ -8,7 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import com.example.freegamesapp.domain.models.Game
 import com.example.freegamesapp.navigation.Screen
-import com.example.freegamesapp.presentation.screens.components.GameCard
+import com.example.freegamesapp.presentation.screens.common.GameCard
 
 @Composable
 fun GamesUiList(
